@@ -1,0 +1,11 @@
+<% if( data.indexes.items ){ %>
+<ul>
+<% 
+data.indexes.items.forEach(index => {
+%>
+<li><%- _if(index.date, '<small>'+index.date+'</small><br/>') %><a href="<%= index.href %>"><%= index.title %></a></li>
+<%
+});
+%>
+</ul>
+<% } %>

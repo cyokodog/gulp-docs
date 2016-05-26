@@ -1,0 +1,53 @@
+<!doctype>
+<html>
+<head>
+<style>
+body{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+ul{
+  padding:0;
+}
+li{
+  margin: 16px 0;
+  list-style: none;
+  display: block;
+}
+.header{
+  border-bottom: solid 1px #000;
+}
+.footer{
+  border-top: solid 1px #000;
+}
+.body{
+  min-height: 400px;
+}
+.main,
+.sub{
+  display: inline-block;
+  vertical-align: top;
+}
+.main{
+  width: 70%;
+}
+.sub{
+  width: 25%;
+  text-align: right;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+
+<% if( data.allIndexes.page.items ){ %>
+<ul>
+<% data.allIndexes.page.items.forEach(function(index){%>
+<li><a href="<%= index.href %>"><%= index.title %></a></li>
+<% }) %>
+</ul>
+<% } %>
+
+</div>
+<div class="body">

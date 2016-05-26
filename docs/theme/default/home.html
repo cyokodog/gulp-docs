@@ -1,0 +1,15 @@
+<%- _include('partials/header.html') %>
+<%- contents %>
+
+<h2>New Entries</h2>
+
+<% if( data.allIndexes.blog.items ){ %>
+<ul>
+<% data.allIndexes.blog.items.forEach(function(index){%>
+<li><small><%= index.date %></small> <a href="<%= index.href %>"><%= index.title %></a></li>
+<% }) %>
+</ul>
+<% } %>
+
+<%- _include('partials/footer.html') %>
+

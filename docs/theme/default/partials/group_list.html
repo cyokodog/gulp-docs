@@ -1,0 +1,22 @@
+
+
+<% 
+Object.keys(data.group).forEach(key => {
+  const group = data.group[key];
+  group.forEach(indexes => {
+%>
+<h2><%= indexes.title %></h2>
+<ul>
+<%
+    Object.keys(indexes.items).forEach(key => {
+      const index = indexes.items[key];
+%>
+<li><a href="<%= index.href %>"><%= index.title %></a></li>
+<%
+    });
+%>
+</ul>
+<%
+  });
+});
+%>

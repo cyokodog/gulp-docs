@@ -1,0 +1,22 @@
+{
+  "name": "gulp-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "2.12.8",
+    "gulp": "3.9.1",
+    "gulp-if": "2.0.1",
+    "gulp-load-plugins": "1.2.4",
+    "gulp-rename": "1.2.2",
+    "run-sequence": "1.2.1",
+    "through2": "2.0.1",
+    "yamljs": "0.2.7"
+  }
+}

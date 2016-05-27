@@ -171,6 +171,8 @@ const cond = (file) => {
         indexPages: indexPages,
 
 indexingOnlyHref: page.indexingOnlyHref,
+indexing: page.indexing,
+
 
         pageId: pageId,
         groupingKeys: settings.groupingKeys,

@@ -12,9 +12,12 @@
   "dependencies": {
     "browser-sync": "2.12.8",
     "gulp": "3.9.1",
+    "gulp-cached": "1.1.0",
     "gulp-if": "2.0.1",
     "gulp-load-plugins": "1.2.4",
     "gulp-rename": "1.2.2",
+    "gulp-using": "0.1.1",
+    "require-dir": "0.3.0",
     "run-sequence": "1.2.1",
     "through2": "2.0.1",
     "yamljs": "0.2.7"

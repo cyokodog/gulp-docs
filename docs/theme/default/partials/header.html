@@ -40,10 +40,9 @@ li{
 </head>
 <body>
 <div class="header">
-
-<% if( data.allIndexes.page.items ){ %>
+<% if( data.allIndexes.page ){ %>
 <ul>
-<% data.allIndexes.page.items.forEach(function(index){%>
+<% data.allIndexes.page.forEach(function(index){%>
 <li><a href="<%= index.href %>"><%= index.title %></a></li>
 <% }) %>
 </ul>

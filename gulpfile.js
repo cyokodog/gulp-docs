@@ -15,10 +15,10 @@ GulpDocs.defineTask({
   pages: {
     blog: {
       isBlog: true,
-      title: 'BLOG',
+      title: 'BLOG'
     },
     profile: {
-      title: 'PROFILE',
+      title: 'PROFILE'
     }
   }
 });

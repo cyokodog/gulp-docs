@@ -11,14 +11,18 @@ GulpDocs.defineTask({
     { id: 'tags',     title: 'TAGS'}
   ],
 
+  // グルーピング用画面に適用するテンプレート
+  groupTemplateFile: 'post.html',
+
   // ページ設定
   pages: {
     blog: {
-      isBlog: true,
-      title: 'BLOG'
+      title: 'BLOG',
+      templateFile: 'post.html'
     },
     profile: {
-      title: 'PROFILE'
+      title: 'PROFILE',
+      templateFile: 'page.html'
     }
   }
 });

@@ -5,6 +5,14 @@ GulpDocs.defineTask({
   // ルートPATH
   rootPath: './docs',
 
+  // mdファイルを管理する場所
+  srcPath: '/src',
+
+  indexesSort: [
+    {key: 'date', isDesc: true},
+    {key: 'no'}
+  ],
+
   // グルーピングするキーワード
   groupingKeys: [
     { id: 'category', title: 'CATEGORY'},
@@ -20,8 +28,8 @@ GulpDocs.defineTask({
       title: 'BLOG',
       templateFile: 'post.html'
     },
-    profile: {
-      title: 'PROFILE',
+    about: {
+      title: 'ABOUT',
       templateFile: 'page.html'
     }
   }

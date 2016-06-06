@@ -8,6 +8,9 @@ GulpDocs.defineTask({
   // mdファイルを管理する場所
   srcPath: '/src',
 
+  // バンドルするjsのエントリポイント
+  bundleEntryPath: '/scripts/index.js',
+
   indexesSort: [
     {key: 'date', isDesc: true},
     {key: 'no'}
